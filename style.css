@@ -2,6 +2,26 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 canvas {
   display: block;
+}
+
+
+.text {
+    color: plum;
+    text-align: center;
+    background-color: l;  
+      padding: 50px;
+
+}
+
+.panel {
+    text-align: center;
+    background-color: plum;  
+      padding: 80px;
+    margin: 20px;
+    border: 4px solid black; /* Define border width and color */
+
+
 }

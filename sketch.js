@@ -1,7 +1,7 @@
 let sizeInput, shapeSelect, colorSelect, patternSelect;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   
   // Create input elements
   createInputs();
@@ -16,14 +16,15 @@ function draw() {
 
 // Create input elements
 function createInputs() {
+    
   // Size input
   sizeInput = createSlider(10, 200, 100);
-  sizeInput.position(20, 20);
+  sizeInput.position(windowWidth/2 - sizeInput.width/2, 240);
   
   // Shape select
   
   shapeSelect = createSelect();
-  shapeSelect.position(20, 50);
+  shapeSelect.position(windowWidth/2 - shapeSelect.width/2, 340);
   shapeSelect.option('Circle');
   shapeSelect.option('Square');
   shapeSelect.option('Triangle');
@@ -32,16 +33,22 @@ function createInputs() {
   // Color select
   
   colorSelect = createSelect();
-  colorSelect.position(20, 80);
+  colorSelect.position(windowWidth/2 - shapeSelect.width/2, 310);
   colorSelect.option('Red');
   colorSelect.option('Green');
   colorSelect.option('Blue');
-  
+  colorSelect.option('Yellow');
+  colorSelect.option('Pink');
+  colorSelect.option('Purple');
+  colorSelect.option('Black');
+  colorSelect.option('Orange');
+    
+
   // Pattern select
   
   
   patternSelect = createSelect();
-  patternSelect.position(20, 110);
+  patternSelect.position(windowWidth/2 - shapeSelect.width/2, 280);
   patternSelect.option('Random');
   patternSelect.option('Grid');
   
